@@ -1,3 +1,3 @@
 # latex by example using Overleaf
-# Judhi Prasetyo
-# 10/10/2022
+## Judhi Prasetyo
+## Initial version: 10/10/2022
