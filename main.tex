@@ -5,7 +5,7 @@
 
 \usepackage{balance} % for balancing columns on the final page
 % \usepackage{booktabs} % For formal tables
-\usepackage{graphics} % for pdf, bitmapped graphics files
+\usepackage{graphics} % for pdf, bit-mapped graphics files
 \usepackage{epsfig} % for postscript graphics files
 \usepackage{mathptmx} % assumes new font selection scheme installed
 \usepackage{times} % assumes new font selection scheme installed
@@ -20,7 +20,7 @@
 \begin{document}
 
 % paper title
-\title{This is a Sample LaTex Document}
+\title{This is a Sample LaTeX Document}
 
 %author
 \author{Judhi Prasetyo, M00609881, j.prasetyo@mdx.ac.ae}
@@ -37,7 +37,6 @@ Besides being used as a mechanism to modulate positive feedback to achieve good 
 We study the effectiveness of this strategy using two classical decision mechanisms, the voter model and the majority rule, showing that the majority rule is, at least in the current setting, necessary for this strategy to work. The strategy has also been validated on a real Kilobots proof of concept experiment. 
 \end{abstract}
 
-% Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
 Collective decision-making, Best-of-n problem, spatial defence
 \end{IEEEkeywords}
@@ -137,16 +136,41 @@ Since, as explained above, we only consider $\rho_{RED} > \rho_{BLUE} = 1$, the 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quam id leo in vitae turpis. In est ante in nibh. Enim ut sem viverra aliquet eget sit amet tellus cras. Aliquam etiam erat velit scelerisque in dictum non. Dictum sit amet justo donec enim diam. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. A arcu cursus vitae congue mauris. Fermentum leo vel orci porta non pulvinar neque. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta. Senectus et netus et malesuada fames ac turpis egestas integer. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis. Eget nulla facilisi etiam dignissim diam quis.
 
-Tincidunt id aliquet risus feugiat in. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. In aliquam sem fringilla ut morbi tincidunt augue. Dui vivamus arcu felis bibendum ut tristique et egestas. Duis ultricies lacus sed turpis. Sed sed risus pretium quam vulputate dignissim. Consectetur adipiscing elit pellentesque habitant. Arcu odio ut sem nulla pharetra diam sit. Eu consequat ac felis donec. Arcu bibendum at varius vel pharetra. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Augue lacus viverra vitae congue eu consequat ac felis donec.
+Tincidunt id aliquet risus feugiat in. Varius morbi enim nunc faucibus a pellentesque sit amet porttitor. In aliquam sem fringilla ut morbi tincidunt augue. Dui vivamus arcu felis bibendum ut tristique et egestas. Duis ultricies lacus sed turpis. Sed sed risus pretium quam vulputate dignissim. Consectetur adipiscing elit pellentesque habitant. Arcu odio ut sem nulla pharetra diam sit. Eu consequat ac felis donec. Arcu bibendum at varius vel pharetra. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Augue lacus viverra vitae congue eu consequat ac felis donec. 
+
+This is an example sentence that refer to a figure~\ref{fig:chart} that should be automatically shown before this paragraph, although it is defined after.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.3\textwidth]{images/chart.png}
+  \hfill
+\caption{Only one figure in a single column}
+  \label{fig:chart}
+\end{figure}
 
 
 \section{Conclusion}
 In this paper, we study a mechanism to increase the resiliency of a swarm of agents performing collective decision making, subject to attacks represented by the malicious exploitation of the positive feedback modulation. Two options, BLUE and RED, are assumed to have two different dissemination factors, that is two different times of dissemination of their opinions. The BLUE option is characterized by a dissemination factor that is lower than the RED option. Nevertheless, the BLUE option wants to defend its opinion, against the attacks of the RED option. The BLUE option can still win the consensus, when the agents with such opinion use a  spatial strategy through which they stay in place and stick the attacker, once it is converted from RED to BLUE. 
 This mechanism is  inspired by the defence strategy used by stingless bees, that use some special resin to stick attackers in order to defend themselves. 
 
-We can conclude that, if agents are attacked by more aggressive agents (with higher dissemination factor), a good strategy for them to win is to stop where they are and progressively form clusters. This study can be particularly relevant for patrolling and surveillance applications. The fact that small systems are more resilient to external attacks, compared with larger systems make this strategy suitable to be applied in real surveillance swarms of agents.
+We can conclude that, if agents are attacked by more aggressive agents (with higher dissemination factor), a good strategy for them to win is to stop where they are and progressively form clusters. This study can be particularly relevant for patrolling and surveillance applications. The fact that small systems are more resilient to external attacks, compared with larger systems make this strategy suitable to be applied in real surveillance swarms of agents. 
 
 In the next studies, we will investigate the spatial distribution of agents, where agglomeration of blue agents is expected.  Finally, we note that the Blue-sticky can be considered a rudimentary aggregation behaviour, as it produces clusters, thus it is in our agenda to study the coupling of collective decision making with other collective behaviours that prouce different spatial correlations, such as collective motion or pattern formation. 
+
+\begin{table}
+\centering
+\begin{tabular}{|p{0.1\textwidth}|p{0.3\textwidth}|}
+\hline
+No & Description \\
+\hline
+$1$ & One \\
+$2$ & Two \\
+$3$ & Three \\
+\hline
+\end{tabular}
+\caption{Single column width table}
+\end{table}
+
 
 % use section* for acknowledgment
 \section*{Acknowledgment}
